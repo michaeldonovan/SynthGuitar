@@ -40,10 +40,10 @@ pictures:
   original: synthguitar8.jp-802x1000.jpg
   sizes: []
   thumbnail: synthguitar8.jp-802x1000.jpg
-- filename: synthguitar9.jp
-  original: synthguitar9.jp-664x1000.jpg
+- filename: synthguitar15.jp
+  original: synthguitar15.jp-750x1000.jpg
   sizes: []
-  thumbnail: synthguitar9.jp-664x1000.jpg
+  thumbnail: synthguitar15.jp-750x1000.jpg
 - filename: synthguitar10.jp
   original: synthguitar10.jp-1000x664.jpg
   sizes: []
@@ -56,7 +56,8 @@ pictures:
   original: synthguitar14.jp-664x1000.jpg
   sizes: []
   thumbnail: synthguitar14.jp-664x1000.jpg
-- filename: synthguitar15.jp
-  original: synthguitar15.jp-750x1000.jpg
+- filename: synthguitar9.jp
+  original: synthguitar9.jp-664x1000.jpg
   sizes: []
-  thumbnail: synthguitar15.jp-750x1000.jpg
+  thumbnail: synthguitar9.jp-664x1000.jpg
+
