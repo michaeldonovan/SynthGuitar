@@ -155,6 +155,10 @@
       </params>
       <attribs/>
    </obj>
+   <obj type="math/+" uuid="44553fdc8628c67ab535845ed1be304ad6c9553b" name="+_4" x="826" y="140">
+      <params/>
+      <attribs/>
+   </obj>
    <obj type="osc/supersaw" uuid="ece83feb36cfaee7dc3964b75c485774ea0309cf" name="supersaw_1" x="896" y="140">
       <params>
          <frac32.s.map name="pitch" value="-12.0"/>
@@ -238,6 +242,10 @@
       </params>
       <attribs/>
    </obj>
+   <obj type="math/+" uuid="44553fdc8628c67ab535845ed1be304ad6c9553b" name="+_3" x="826" y="280">
+      <params/>
+      <attribs/>
+   </obj>
    <obj type="osc/supersaw" uuid="ece83feb36cfaee7dc3964b75c485774ea0309cf" name="supersaw_2" x="896" y="280">
       <params>
          <frac32.s.map name="pitch" value="-12.0"/>
@@ -255,15 +263,6 @@
          <frac32.u.map name="gain2" value="32.0"/>
          <frac32.u.map name="gain3" value="32.0"/>
          <frac32.u.map name="gain4" value="32.0"/>
-      </params>
-      <attribs/>
-   </obj>
-   <obj type="jho/filter/para" uuid="fafd6412-8488-4b59-9860-4e93bd1ce560" name="para_1" x="1526" y="280">
-      <params>
-         <frac32.s.map name="pitch" value="0.0"/>
-         <frac32.u.map name="reso" value="0.0"/>
-         <frac32.s.map name="gain" value="-22.0"/>
-         <bool32.tgl name="on" value="1"/>
       </params>
       <attribs/>
    </obj>
@@ -358,6 +357,10 @@
       </params>
       <attribs/>
    </obj>
+   <obj type="math/+" uuid="44553fdc8628c67ab535845ed1be304ad6c9553b" name="+_2" x="826" y="434">
+      <params/>
+      <attribs/>
+   </obj>
    <obj type="osc/supersaw" uuid="ece83feb36cfaee7dc3964b75c485774ea0309cf" name="supersaw_3" x="896" y="434">
       <params>
          <frac32.s.map name="pitch" value="-12.0"/>
@@ -434,6 +437,10 @@
       </params>
       <attribs/>
    </obj>
+   <obj type="math/+" uuid="44553fdc8628c67ab535845ed1be304ad6c9553b" name="+_1" x="826" y="588">
+      <params/>
+      <attribs/>
+   </obj>
    <obj type="osc/supersaw" uuid="ece83feb36cfaee7dc3964b75c485774ea0309cf" name="supersaw_4" x="896" y="588">
       <params>
          <frac32.s.map name="pitch" value="-12.0"/>
@@ -465,8 +472,16 @@
       </params>
       <attribs/>
    </obj>
-   <obj type="disp/bool" uuid="a0ee71d48208b71752cbb8c05e55145106ef3946" name="bool_1" x="1904" y="798">
-      <params/>
+   <obj type="lfo/sine" uuid="75f7330c26a13953215dccc3b7b9008545c9daa9" name="sine_1" x="826" y="840">
+      <params>
+         <frac32.s.map name="pitch" value="-3.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="math/*c" uuid="7d5ef61c3bcd571ee6bbd8437ef3612125dfb225" name="*c_1" x="980" y="840">
+      <params>
+         <frac32.u.map name="amp" value="0.2999997138977051"/>
+      </params>
       <attribs/>
    </obj>
    <comment type="patch/comment" x="1778" y="882" text="toggle drum/synth"/>
@@ -571,8 +586,8 @@
    </obj>
    <obj type="sss/dist/saturator" uuid="41495e37-8b0a-41cf-8119-ddc58734e89f" name="saturator_1" x="854" y="1148">
       <params>
-         <frac32.u.map name="amp" value="6.0"/>
-         <frac32.u.map name="strength" value="15.0"/>
+         <frac32.u.map name="amp" value="10.0"/>
+         <frac32.u.map name="strength" value="26.0"/>
          <frac32.u.map name="max" value="64.0"/>
       </params>
       <attribs/>
@@ -591,18 +606,6 @@
          <frac32.u.map name="gain2" value="63.5"/>
          <frac32.u.map name="gain3" value="64.0"/>
          <frac32.u.map name="gain4" value="64.0"/>
-      </params>
-      <attribs/>
-   </obj>
-   <obj type="sequencer16" uuid="a12cc44d-6733-4c08-892a-e4f7c534e94e" name="obj_2" x="154" y="1288">
-      <params>
-         <bool32.tgl name="Manual step select" value="0"/>
-         <bool32.tgl name="Latch to trigger" value="0"/>
-         <bool32.tgl name="Backwards reset mode" value="0"/>
-         <int32.hradio name="Manual step" value="0"/>
-         <bin16 name="Trigger sequencer" value="2321"/>
-         <bin16 name="Gate sequencer" value="17476"/>
-         <int32.hradio name="Sequence length" value="15"/>
       </params>
       <attribs/>
    </obj>
@@ -642,6 +645,18 @@
       <params>
          <frac32.s.map name="pitch" value="26.0"/>
          <frac32.u.map name="reso" value="0.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="sptnk/sequencer/sequencer16" uuid="e26740e7-efd3-4025-a1d1-93c4cb5094da" name="obj_3" x="196" y="1540">
+      <params>
+         <bool32.tgl name="Manual step select" value="0"/>
+         <bool32.tgl name="Latch to trigger" value="0"/>
+         <bool32.tgl name="Backwards reset mode" value="0"/>
+         <int32.hradio name="Manual step" value="0"/>
+         <bin16 name="Trigger sequencer" value="2321"/>
+         <bin16 name="Gate sequencer" value="17476"/>
+         <int32.hradio name="Sequence length" value="15"/>
       </params>
       <attribs/>
    </obj>
@@ -720,15 +735,15 @@
       </net>
       <net>
          <source obj="glideMultiExt_4" outlet="out"/>
-         <dest obj="supersaw_4" inlet="pitch"/>
+         <dest obj="+_1" inlet="in1"/>
       </net>
       <net>
          <source obj="glideMultiExt_3" outlet="out"/>
-         <dest obj="supersaw_3" inlet="pitch"/>
+         <dest obj="+_2" inlet="in1"/>
       </net>
       <net>
          <source obj="glideMultiExt_2" outlet="out"/>
-         <dest obj="supersaw_2" inlet="pitch"/>
+         <dest obj="+_3" inlet="in1"/>
       </net>
       <net>
          <source obj="dial_2" outlet="out"/>
@@ -924,6 +939,7 @@
       <net>
          <source obj="cc_16" outlet="midiCC"/>
          <dest obj="flipflop_1" inlet="trig"/>
+         <dest obj="obj_3" inlet="Reset"/>
       </net>
       <net>
          <source obj="mix_5" outlet="out"/>
@@ -952,7 +968,6 @@
       <net>
          <source obj="flipflop_1" outlet="o"/>
          <dest obj="*_2" inlet="b"/>
-         <dest obj="digital_1" inlet="in"/>
       </net>
       <net>
          <source obj="*_2" outlet="result"/>
@@ -1007,7 +1022,7 @@
       </net>
       <net>
          <source obj="glideMultiExt_1" outlet="out"/>
-         <dest obj="supersaw_1" inlet="pitch"/>
+         <dest obj="+_4" inlet="in1"/>
       </net>
       <net>
          <source obj="&lt;&lt;_1" outlet="result"/>
@@ -1058,18 +1073,6 @@
          <dest obj="mux_1" inlet="i2"/>
       </net>
       <net>
-         <source obj="obj_2" outlet="Trigger out"/>
-         <dest obj="kick_1" inlet="t"/>
-      </net>
-      <net>
-         <source obj="square_1" outlet="wave"/>
-         <dest obj="obj_2" inlet="Clock In"/>
-      </net>
-      <net>
-         <source obj="obj_2" outlet="Gate out"/>
-         <dest obj="obj_1" inlet="closed"/>
-      </net>
-      <net>
          <source obj="saturator_1" outlet="out"/>
          <dest obj="mix_7" inlet="in1"/>
       </net>
@@ -1095,7 +1098,8 @@
       </net>
       <net>
          <source obj="mix_1" outlet="out"/>
-         <dest obj="para_1" inlet="in"/>
+         <dest obj="mx4f_1" inlet="1"/>
+         <dest obj="Flooper_1" inlet="in1"/>
       </net>
       <net>
          <dest obj="note_2" inlet="offset"/>
@@ -1118,10 +1122,6 @@
          <dest obj="flipflop_2" inlet="trig"/>
       </net>
       <net>
-         <source obj="flipflop_2" outlet="o"/>
-         <dest obj="bool_1" inlet="in"/>
-      </net>
-      <net>
          <source obj="compST_1" outlet="outL"/>
          <dest obj="out_stereo_vol_1" inlet="left"/>
       </net>
@@ -1134,13 +1134,48 @@
          <dest obj="glideMultiExt_1" inlet="in"/>
       </net>
       <net>
-         <source obj="para_1" outlet="out"/>
-         <dest obj="mx4f_1" inlet="1"/>
-         <dest obj="Flooper_1" inlet="in1"/>
-      </net>
-      <net>
          <source obj="mux_2" outlet="o"/>
          <dest obj="mx4f_1" inlet="3"/>
+      </net>
+      <net>
+         <source obj="obj_3" outlet="Trigger out"/>
+         <dest obj="kick_1" inlet="t"/>
+         <dest obj="digital_1" inlet="in"/>
+      </net>
+      <net>
+         <source obj="obj_3" outlet="Gate out"/>
+         <dest obj="obj_1" inlet="closed"/>
+      </net>
+      <net>
+         <source obj="square_1" outlet="wave"/>
+         <dest obj="obj_3" inlet="Clock In"/>
+      </net>
+      <net>
+         <source obj="+_1" outlet="out"/>
+         <dest obj="supersaw_4" inlet="pitch"/>
+      </net>
+      <net>
+         <source obj="+_2" outlet="out"/>
+         <dest obj="supersaw_3" inlet="pitch"/>
+      </net>
+      <net>
+         <source obj="+_3" outlet="out"/>
+         <dest obj="supersaw_2" inlet="pitch"/>
+      </net>
+      <net>
+         <source obj="+_4" outlet="out"/>
+         <dest obj="supersaw_1" inlet="pitch"/>
+      </net>
+      <net>
+         <source obj="sine_1" outlet="wave"/>
+         <dest obj="*c_1" inlet="in"/>
+      </net>
+      <net>
+         <source obj="*c_1" outlet="out"/>
+         <dest obj="+_1" inlet="in2"/>
+         <dest obj="+_2" inlet="in2"/>
+         <dest obj="+_3" inlet="in2"/>
+         <dest obj="+_4" inlet="in2"/>
       </net>
    </nets>
    <settings>
@@ -1153,9 +1188,9 @@
    </settings>
    <notes><![CDATA[]]></notes>
    <windowPos>
-      <x>348</x>
-      <y>33</y>
-      <width>1555</width>
+      <x>16</x>
+      <y>610</y>
+      <width>1352</width>
       <height>1139</height>
    </windowPos>
 </patch-1.0>
