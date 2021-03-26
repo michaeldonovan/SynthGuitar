@@ -7,7 +7,7 @@
 
 # Site settings
 title: Michael Donovan
-email: mbdonovan@pm.me
+email: michael@mdonovan.dev
 baseurl: "/SynthGuitar" # the subpath of your site, e.g. /blog
 url: "//michaeldonovan.github.io" # the base hostname & protocol for your site
 github_username:  michaeldonovan
