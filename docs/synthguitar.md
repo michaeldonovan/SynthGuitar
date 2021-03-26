@@ -9,7 +9,7 @@ permalink: /synthguitar/
 ## Synth Guitar
 Michael Donovan
 
-mbdonovan@pm.me
+michael@mdonovan.dev
 
 Northwestern University
 
